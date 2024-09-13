@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Web лаба 1</title>
+</head>
+
+<body>
+	<ul>
+		<li><a href="http://www.kubsu.ru/">Ссылка на сайт kubsu</a></li>
+		<li><a href="https://www.kubsu.ru/">В протоколе https</a></li>
+		<li><a href="">
+				<div>Изображение ссылка</div>
+				<img src="https://www.kubsu.ru/sites/default/files/news/-go_hoe7wus.jpg" alt="" width="700">
+			</a>
+		</li>
+		<li><a href="inner.html">Внутренняя страница</a></li>
+		<li><a href="index.html">Главная страница</a></li>
+		<li><a href="#form">Фрагмент текущей страницы</a></li>
+		<li><a href="http://www.kubsu.ru/?name=elya&password=12345&age=19">Ссылка с тремя параметрами url</a></li>
+		<li><a href="http://www.kubsu.ru/?id=134">Ссылка с параметром id</a></li>
+		<li><a href="inner.html">На страницу в текущем каталоге</a></li>
+		<li><a href="./about/page.html">Ссылка в каталоге about</a></li>
+		<li><a href="../page.html">Ссылка в каталоге выше текущего</a></li>
+		<li><a href="../../page.html">Ссылка в каталоге двумя уровнями выше</a></li>
+		<li>Контекстная ссылка в тексте абзаца:
+			<p>Элемент HTML input используется для создания интерактивных элементов управления в веб-формах для получения данных от пользователя; в зависимости от устройства и <a href="https://developer.mozilla.org/ru/docs/Glossary/User_agent">user agent</a>, доступен широкий выбор типов входных данных и виджетов управления.</p>
+		</li>
+		<li><a href="https://learn.javascript.ru/">Ссылка на фрагмент страницы стороннего сайта</a></li>
+		<li>Ссылки из прямоугольных и круглых областей картинки
+
+			<br>
+			<img src="https://www.kubsu.ru/sites/default/files/news/-go_hoe7wus.jpg" alt="" width="700" usemap="#mymap">
+			<map name="mymap">
+				<area shape="circle" coords="200,200,150" href="https://kubsu.ru/" alt="Круглая область">
+				<area shape="rect" coords="0,0,300,100" href="https://kubsu.ru/" alt="Прямоугольная область">
+			</map>
+		</li>
+		<li><a href="">С пустым href</a></li>
+		<li><a>Ссылка без href</a></li>
+		<li><a href="https://www.kubsu.ru/" rel="nofollow">Запрещено переходить поисковикам</a></li>
+		<li><a href="https://www.kubsu.ru/" rel="noindex">Запрещено индексировать</a></li>
+		<li>
+			<p>Нумерованный список ссылок</p>
+			<ol>
+				<li><a href="https://m.ok.ru/?ysclid=m10q75rq3o986169067" title="Одноклассники">Одноклассники</a></li>
+				<li><a href="https://lapkins.ru/cat/" title="Лапкинс">Лапкинс</a></li>
+				<li><a href="https://testometrika.com/tests/?ysclid=m10qbto07u397199766" title="IQ тест">IQ тест</a></li>
+				<li><a href="https://gadalkatopmagic24.ru/phone/" title="Татьяна">Татьяна</a></li>
+			</ol>
+		</li>
+		<li><a href="ftp://elya:password12345@example.com/files/file.txt">Ссылка на FTP</a></li>
+	</ul>
+	<br>
+	<h2>Форма</h2>
+	<form action="/" method="POST" id="form">
+		<label for="fio">ФИО</label>
+		<br>
+		<input type="text" name="fio" id="fio">
+		<br>
+		<label for="tel">Телефон</label>
+		<br>
+		<input type="tel" name="tel" id="tel">
+		<br>
+		<label for="email">Email</label>
+		<br>
+		<input type="email" name="email" id="email">
+		<br>
+		<label for="birth">Дата рождения</label>
+		<br>
+		<input type="date" name="birth" id="birth">
+		<br>
+		Пол
+		<br>
+		<label>
+			<input type="radio" name="gender" value="Мужчина" />
+			Мужчина</label>
+		<label>
+			<input type="radio" name="gender" value="Женщина" />
+			Женщина</label>
+		<br />
+		<label for="language">Любимый язык программирования</label>
+		<br>
+		<select name="PL list" multiple="multiple" id="language">
+			<option value="Python" selected="selected">Python</option>
+			<option value="C++">C++</option>
+			<option value="Java">Java</option>
+			<option value="JavaScript">JavaScript</option>
+			<option value="PHP">PHP</option>
+			<option value="Golang">Golang</option>
+		</select>
+		<br>
+		<label for="bio">Биография</label>
+		<br>
+		<textarea name="bio" id="bio"></textarea>
+		<br>
+		<label for="contract">С контрактом ознакомлен(а)</label>
+		<input type="checkbox" name="contract" id="contract" />
+		<br>
+		<input type="submit" value="Сохранить">
+	</form>
+</body>
+
+</html>
